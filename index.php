@@ -7,26 +7,12 @@
     <body>
         Ez az index.php
          <?php
-             function soroslas()
-             {
-                $kihuzottak=0;
-                 while($kihuzottak<5)
-                {
-                    $sorsoltszam=rand(1,90);
-                    if(!isset($tomb[$sorsoltszam]))
-                    {
-                        $tomb[$sorsoltszam]=1;
-                        $kihuzottak++;
-                    }
-                }
-                return $tomb;
-                //var_dump($tomb);   
-             }
+ 
             $sorsolt=sorsolas();
-            var_dump($tomb);
+            var_dump($sorsolt);
             //lottóhúzás
             
-            echo "Ezek volt a számtömb";
+            echo "Ez volt a számtömb";
             echo "Itt már a php script fut";
         // put your code here
         ?>
